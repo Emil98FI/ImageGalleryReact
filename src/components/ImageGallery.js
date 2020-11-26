@@ -55,6 +55,7 @@ class ImageGallery extends React.Component {
 
   componentDidUpdate() {
     localStorage.setItem("pics", JSON.stringify(this.state.saveImages))
+    window.scrollTo(0, 0)
   }
 
   onSearchSubmit(event, input) {
