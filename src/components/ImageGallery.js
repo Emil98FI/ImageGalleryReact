@@ -55,7 +55,6 @@ class ImageGallery extends React.Component {
 
   componentDidUpdate() {
     localStorage.setItem("pics", JSON.stringify(this.state.saveImages))
-    window.scrollTo(0, 0)
   }
 
   onSearchSubmit(event, input) {
@@ -91,6 +90,7 @@ class ImageGallery extends React.Component {
           Images: result.photos,
         })
       })
+    window.scrollTo(0, 0)
   }
 
   handleChange(event) {
@@ -131,6 +131,7 @@ class ImageGallery extends React.Component {
           Images: result.photos,
         })
       })
+    window.scrollTo(0, 0)
   }
 
   render() {
