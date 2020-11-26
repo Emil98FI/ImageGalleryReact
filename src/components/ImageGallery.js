@@ -67,7 +67,7 @@ class ImageGallery extends React.Component {
     })
 
     this.setState((prevState) => ({
-      page: prevState.Spage + 1,
+      Spage: prevState.Spage + 1,
     }))
 
     const Page = this.state.Spage
